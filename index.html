@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Syakirul's Portfolio | Super Portfolio World</title>
+
+  <!-- Google Fonts: retro arcade style -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+
+  <!-- Link to my CSS file -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ========== NAVBAR (stays at the top) ========== -->
+  <header class="hud-header">
+    <div class="hud-container">
+
+      <!-- Logo / my name -->
+      <a href="#home" class="hud-logo">
+        <span class="m-badge">M</span> SYAKIRUL
+      </a>
+
+      <!-- Coin counter: JavaScript (script.js) adds 1 on each click -->
+      <div class="coin-display" id="coin-hud" title="Click for coins!">
+        <span class="coin-icon">🪙</span>
+        <span>x</span>
+        <span id="coin-counter">99</span>
+      </div>
+
+      <!-- Links that jump to each section using the section id -->
+      <nav class="hud-nav">
+        <ul class="nav-links">
+          <li><a href="#home">WORLD 1-1</a></li>
+          <li><a href="#about">PROFILE</a></li>
+          <li><a href="#projects">STAGES</a></li>
+          <li><a href="#skills">POWER-UPS</a></li>
+          <li><a href="#contact">WARP ZONE</a></li>
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ========== SECTION 1: HOME ========== -->
+    <section id="home" class="title-screen">
+      <div class="title-container">
+        <div class="title-icon">🍄</div>
+        <div class="badge-tag oval-pill">YEAR 3 &bull; NETWORK COMPUTING</div>
+
+        <p class="mario-callout">IT'S-A ME,</p>
+        <h1 class="hero-title">MOHAMMAD SYAKIRUL ASYRAAF</h1>
+
+        <a href="#about" class="btn-start oval-pill">[ &#9654; PRESS START ]</a>
+      </div>
+    </section>
+
+    <!-- ========== SECTION 2: ABOUT ME ========== -->
+    <section id="about" class="about-section">
+      <div class="section-container">
+
+        <div class="section-header">
+          <h2 class="section-title oval-heading">ABOUT ME</h2>
+          <p class="section-tagline">PLAYER 1: STATS &amp; STUDIES</p>
+        </div>
+
+        <!-- Two cards side by side (Grid) -->
+        <div class="about-grid">
+
+          <!-- Card 1: education -->
+          <div class="mario-card-oval stats-card">
+            <h3 class="card-title">MY STUDIES</h3>
+
+            <div class="stat-row">
+              <span class="stat-label">PROGRAMME:</span>
+              <span class="stat-value">B.CS Network Computing (Hons)</span>
+            </div>
+
+            <div class="stat-row">
+              <span class="stat-label">CAMPUS:</span>
+              <span class="stat-value">UNIMAS</span>
+            </div>
+
+            <div class="progression-box">
+              <div class="progression-title">LEVEL PROGRESS:</div>
+              <div class="progression-meter oval-pill">
+                YEAR 3 [🍄🍄🍄⭐] ALMOST AT THE FLAGPOLE
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2: short biography -->
+          <div class="mario-card-oval bio-card">
+            <h3 class="card-title">MISSION BRIEFING</h3>
+            <p>
+              I'm a <strong>Network Computing</strong> student at UNIMAS. So far I've learned Java programming, built networks in Cisco Packet Tracer, and worked with databases.
+            </p>
+            <p>
+              I like getting things to work, and I like it even more when I find out why they didn't. Every bug is just another Goomba to stomp.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== SECTION 3: PROJECTS ========== -->
+    <section id="projects" class="stages-section">
+      <div class="section-container">
+
+        <div class="section-header">
+          <h2 class="section-title oval-heading">STAGE SELECT</h2>
+          <p class="section-tagline">STAGES I'VE CLEARED</p>
+        </div>
+
+        <!-- Each project is one card (same structure repeated 5 times) -->
+        <div class="stages-grid">
+
+          <!-- Project 1-1 -->
+          <article class="stage-card">
+            <div class="stage-badge oval-pill">STAGE 1-1</div>
+            <h3 class="stage-title">Java SDG Quiz App</h3>
+            <p class="stage-problem"><strong>The boss:</strong> Reading long text about sustainability gets boring fast, so people stop reading.</p>
+            <p class="stage-solution"><strong>How I won:</strong> Built a quiz app in Java Swing that asks questions, counts the score and shows your progress.</p>
+
+            <div class="tools-used-section">
+              <span class="tools-title">Power-ups used:</span>
+              <div class="tech-tags">
+                <span class="tag oval-pill">Java</span>
+                <span class="tag oval-pill">Java Swing</span>
+                <span class="tag oval-pill">OOP Design</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 1-2 -->
+          <article class="stage-card">
+            <div class="stage-badge oval-pill">STAGE 1-2</div>
+            <h3 class="stage-title">Campus Network with VLANs</h3>
+            <p class="stage-problem"><strong>The boss:</strong> Putting every department on one network makes it slow and lets anyone see data they shouldn't.</p>
+            <p class="stage-solution"><strong>How I won:</strong> Built a campus network in Cisco Packet Tracer with separate VLANs, routing between them, and ACLs to control who can reach what.</p>
+
+            <div class="tools-used-section">
+              <span class="tools-title">Power-ups used:</span>
+              <div class="tech-tags">
+                <span class="tag oval-pill">Cisco Packet Tracer</span>
+                <span class="tag oval-pill">VLAN Routing</span>
+                <span class="tag oval-pill">Subnetting</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 1-3 -->
+          <article class="stage-card">
+            <div class="stage-badge oval-pill">STAGE 1-3</div>
+            <h3 class="stage-title">Student Database in MySQL</h3>
+            <p class="stage-problem"><strong>The boss:</strong> The student records had duplicates and wrong entries, and they broke whenever someone updated them.</p>
+            <p class="stage-solution"><strong>How I won:</strong> Designed the tables up to 3NF to remove duplicates, drew the ERD, and wrote SQL queries that use joins.</p>
+
+            <div class="tools-used-section">
+              <span class="tools-title">Power-ups used:</span>
+              <div class="tech-tags">
+                <span class="tag oval-pill">MySQL</span>
+                <span class="tag oval-pill">ERD Schema</span>
+                <span class="tag oval-pill">Database Design</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 1-4 -->
+          <article class="stage-card">
+            <div class="stage-badge oval-pill">STAGE 1-4</div>
+            <h3 class="stage-title">Linux Server Security</h3>
+            <p class="stage-problem"><strong>The boss:</strong> A server left on default settings is easy to break into, for example with root login and open ports.</p>
+            <p class="stage-solution"><strong>How I won:</strong> Set up user permissions, SSH key login and a UFW firewall, and wrote a Bash script that checks the services on a schedule.</p>
+
+            <div class="tools-used-section">
+              <span class="tools-title">Power-ups used:</span>
+              <div class="tech-tags">
+                <span class="tag oval-pill">Linux / Bash</span>
+                <span class="tag oval-pill">SysAdmin</span>
+                <span class="tag oval-pill">Security Hardening</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 1-5 -->
+          <article class="stage-card">
+            <div class="stage-badge oval-pill">STAGE 1-5</div>
+            <h3 class="stage-title">My Mario Portfolio</h3>
+            <p class="stage-problem"><strong>The boss:</strong> Most student portfolios look the same, so I wanted mine to show some personality.</p>
+            <p class="stage-solution"><strong>How I won:</strong> Built this site with HTML, CSS and a little JavaScript: a coin counter, clickable skill boxes and a mobile layout.</p>
+
+            <div class="tools-used-section">
+              <span class="tools-title">Power-ups used:</span>
+              <div class="tech-tags">
+                <span class="tag oval-pill">HTML5</span>
+                <span class="tag oval-pill">CSS3</span>
+                <span class="tag oval-pill">JavaScript</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== SECTION 4: SKILLS ========== -->
+    <section id="skills" class="inventory-section">
+      <div class="section-container">
+
+        <div class="section-header">
+          <h2 class="section-title oval-heading">🍄 POWER-UP INVENTORY</h2>
+          <p class="section-tagline">TAP A BOX TO OPEN IT</p>
+        </div>
+
+        <!-- <details> opens and closes when clicked, no JavaScript needed -->
+        <div class="inventory-slots-container">
+
+          <!-- Slot 1 -->
+          <details class="inventory-slot mario-card-oval">
+            <summary class="slot-header">
+              <span class="slot-title">&gt; CODING LANGUAGES</span>
+              <span class="slot-action oval-pill">[ ▶ OPEN ]</span>
+            </summary>
+            <div class="slot-details">
+              <div class="badge-cluster">
+                <span class="lang-badge oval-pill">Python</span>
+                <span class="lang-badge oval-pill">C / C++</span>
+                <span class="lang-badge oval-pill">Java (OOP)</span>
+                <span class="lang-badge oval-pill">SQL / MySQL</span>
+                <span class="lang-badge oval-pill">HTML / CSS / JS</span>
+              </div>
+            </div>
+          </details>
+
+          <!-- Slot 2 -->
+          <details class="inventory-slot mario-card-oval">
+            <summary class="slot-header">
+              <span class="slot-title">&gt; TOOLS &amp; NETWORKING</span>
+              <span class="slot-action oval-pill">[ ▶ OPEN ]</span>
+            </summary>
+            <div class="slot-details">
+              <div class="badge-cluster">
+                <span class="tech-badge oval-pill">📡 Cisco Packet Tracer</span>
+                <span class="tech-badge oval-pill">🌐 Network Architecture</span>
+                <span class="tech-badge oval-pill">🔒 Security Protocols</span>
+                <span class="tech-badge oval-pill">💻 Visual Studio Code</span>
+                <span class="tech-badge oval-pill">🐧 Linux Shell &amp; Bash</span>
+                <span class="tech-badge oval-pill">🦈 Wireshark Packet Analysis</span>
+                <span class="tech-badge oval-pill">🐙 Git &amp; GitHub</span>
+              </div>
+            </div>
+          </details>
+
+          <!-- Slot 3 -->
+          <details class="inventory-slot mario-card-oval">
+            <summary class="slot-header">
+              <span class="slot-title">&gt; HOW I WORK</span>
+              <span class="slot-action oval-pill">[ ▶ OPEN ]</span>
+            </summary>
+            <div class="slot-details">
+              <div class="badge-cluster">
+                <span class="method-badge oval-pill">Software Dev Lifecycle (SDLC)</span>
+                <span class="method-badge oval-pill">Agile / Scrum</span>
+                <span class="method-badge oval-pill">Object-Oriented Design (OOD)</span>
+                <span class="method-badge oval-pill">System Analysis &amp; Hardening</span>
+              </div>
+            </div>
+          </details>
+
+          <!-- Slot 4 -->
+          <details class="inventory-slot mario-card-oval">
+            <summary class="slot-header">
+              <span class="slot-title">&gt; LANGUAGES I SPEAK</span>
+              <span class="slot-action oval-pill">[ ▶ OPEN ]</span>
+            </summary>
+            <div class="slot-details">
+              <div class="badge-cluster">
+                <span class="lang-badge oval-pill">ENGLISH</span>
+                <span class="lang-badge oval-pill">MALAY</span>
+              </div>
+            </div>
+          </details>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== SECTION 5: CONTACT ========== -->
+    <section id="contact" class="warp-section">
+      <div class="section-container">
+
+        <div class="section-header">
+          <h2 class="section-title oval-heading">WELCOME TO WARP ZONE!</h2>
+          <p class="section-tagline">PICK A PIPE TO GET IN TOUCH</p>
+        </div>
+
+        <div class="pipes-grid">
+
+          <!-- Opens the email app -->
+          <a href="mailto:csyakirul359@gmail.com" class="pipe-card">
+            <div class="pipe-rim"></div>
+            <div class="pipe-body">
+              <span class="pipe-label">PIPE 1</span>
+              <span class="pipe-dest">EMAIL ME</span>
+            </div>
+          </a>
+
+          <!-- Starts a phone call on mobile -->
+          <a href="tel:0123934755" class="pipe-card">
+            <div class="pipe-rim"></div>
+            <div class="pipe-body">
+              <span class="pipe-label">PIPE 2</span>
+              <span class="pipe-dest">012-3934755</span>
+            </div>
+          </a>
+
+          <!-- Opens LinkedIn in a new tab -->
+          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="pipe-card">
+            <div class="pipe-rim"></div>
+            <div class="pipe-body">
+              <span class="pipe-label">PIPE 3</span>
+              <span class="pipe-dest">LINKEDIN</span>
+            </div>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="arcade-footer">
+    <div class="footer-capsule oval-pill">
+      <p>⭐ THANKS FOR PLAYING! ⭐</p>
+      <p class="footer-sub">&copy; 2026 MOHAMMAD SYAKIRUL ASYRAAF &bull; UNIVERSITY MALAYSIA SARAWAK</p>
+    </div>
+  </footer>
+
+  <!-- Link to my JavaScript file (at the bottom so the page loads first) -->
+  <script src="script.js"></script>
+</body>
+</html>
